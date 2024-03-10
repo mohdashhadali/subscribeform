@@ -1,0 +1,179 @@
+body{
+    background: rgb(36, 33, 76);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainbody{
+    height: 31.5rem;
+    width: 48rem;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    border-radius: 20px;
+}
+.left{
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    margin: 1.2rem 1rem;
+    margin-left: 2rem;
+    height: 29rem;
+    width: 23rem;
+    background: rgb(255, 255, 255);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.right{
+    height: 29rem;
+    width: 23rem;
+    background: linear-gradient(to right, rgb(255, 25, 0) , rgba(255, 111, 0, 0.688));
+    margin: 1.2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right img{
+    height: 27rem;
+    width: 20rem;
+    border-radius: 3px;
+
+}
+.fimg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: -1.4rem .5rem;
+    
+}
+.fimg img{
+    height: 1.2rem;
+    margin-right: 1rem;
+}
+.textarea{
+    display: flex;
+    flex-direction: column;
+}
+.textarea input{
+    padding: 1rem 3rem;
+    border-radius: 5px;
+    outline: none;
+    border: 1.4px solid black;
+    font-size: larger;
+}
+.textarea input:hover{
+    border: 2px solid rgb(255, 111, 0);
+}
+.btnclicked{
+    padding: 1.2rem 3rem;
+    border-radius: 5px;
+    background: linear-gradient(to right, rgb(255, 0, 93) , rgba(255, 111, 0, 0.81));
+    color: white;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.btn{
+    padding: 1.2rem 3rem;
+    border-radius: 5px;
+    background: rgb(34, 34, 78);
+    color: white;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+#emailError{
+    color: red;
+    font-weight: bold;
+}
+.container{
+    height: 13rem;
+    width: 18rem;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 7.5rem 5rem;
+    border-radius: 3rem;
+    font-size: large;
+}
+.container img{
+    margin-left: -17rem;
+    height: 3.5rem;
+}
+.sbtn{
+    padding: 1.2rem 3rem;
+    width: 22rem;
+    border-radius: 6px;
+    background: rgb(34, 34, 78);
+    color: white;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.sbtnclicked{
+    padding: 1.2rem 3rem;
+    width: 22rem;
+    border-radius: 6px;
+    background: linear-gradient(to right, rgb(255, 0, 93) , rgba(255, 111, 0, 0.81));
+    color: white;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:720px){
+    .mainbody{
+        width: 24rem;
+    }
+    .left{
+        width: 11.5rem;
+    }
+    .right{
+        margin-top: 10rem;
+        width: 6rem;
+        height: 11rem;
+    }
+    .right img{
+        width: 5rem;
+        height: 10rem;
+    }   
+}
+@media screen and (max-width:320px){
+    .mainbody{
+        width: 18rem;
+    }
+    .left{
+        width: 9rem;
+    }
+    .right{
+        margin-top: 10rem;
+        width: 4rem;
+        height: 8rem;
+    }
+    .right img{
+        width: 3rem;
+        height: 7rem;
+    }
+    .btn{
+        padding: .5rem 1rem;
+    }
+    .btnclicked{
+        padding: .5rem 1rem;
+    }   
+    .textarea input{
+        padding: .3rem .6rem;
+    }
+}
